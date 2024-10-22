@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 25px;
+
+}
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: rgb(27, 18, 9);
+  }
+  .container {
+    max-width: 1750px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between; /* Espacio igual entre los elementos del header */
+    align-items: center;            /* Alinea los elementos verticalmente en el centro */
+  }
+  .header div nav ul {
+    display: flex;                  /* Los elementos de la lista se alinearán horizontalmente */
+    gap: 15px;                      /* Espacio entre los elementos de la lista */
+  }
+
+  .header div nav ul li{
+    list-style-type: none; /*elimina los puntitos de la lista*/
+  }
+  .header div nav ul li  a{
+    color: black;
+    font-size: 25px;
+    font-weight: 100;
+    text-decoration: none; /* Elimina el subrayado */
+    text-shadow: 
+    1px 1px 0 white,   /* 2px a la derecha, 2px hacia abajo, sin difuminado, color blanco */
+    -1px -1px 0 white, /* 2px a la izquierda, 2px hacia arriba, sin difuminado, color blanco */
+    1px -1px 0 white,  /* 2px a la derecha, 2px hacia arriba, sin difuminado, color blanco */
+    -1px 1px 0 white;  /* 2px a la izquierda, 2px hacia abajo, sin difuminado, color blanco */
+
+  }
+
+  .header div nav ul li img {
+    width: 100px;
+  }
+
+  .logo img { 
+    width: 300px;
+    
+  }
+  .carrousel {
+    background-color: aquamarine;
+  }
+  .resenas {
+    background-color: blue;
+  }
+  .footer {
+    background-color: blueviolet;
+  }
