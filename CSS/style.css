@@ -1,25 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-    padding: 25px;
-
+  text-decoration: none; /*elimina el subrayado en los elementos de las listas*/
+  list-style-type: none; /*elimina los puntitos de la lista*/
 }
+
 body {
+  padding: 50px;
     font-family: "Raleway", sans-serif;
     background-color: rgb(27, 18, 9);
   }
-  .container {
-    max-width: 1750px;
-  }
   
   .header {
-    display: flex;
-    justify-content: space-between; /* Espacio igual entre los elementos del header */
-    align-items: center;            /* Alinea los elementos verticalmente en el centro */
+    display: inline-flex;
+    flex-direction: row;
   }
   .header div nav ul {
-    display: flex;                  /* Los elementos de la lista se alinearán horizontalmente */
-    gap: 15px;                      /* Espacio entre los elementos de la lista */
+    justify-content:center; /* Espacio igual entre los elementos del header */
+    align-items: center; 
+    display: flex;
+    gap: 80px;
+    padding-top: 80px;
+    padding-left: 80px;
+    flex-wrap: wrap;
   }
 
   .header div nav ul li{
@@ -28,7 +31,6 @@ body {
   .header div nav ul li  a{
     color: black;
     font-size: 25px;
-    font-weight: 100;
     text-decoration: none; /* Elimina el subrayado */
     text-shadow: 
     1px 1px 0 white,   /* 2px a la derecha, 2px hacia abajo, sin difuminado, color blanco */
@@ -38,20 +40,59 @@ body {
 
   }
 
-  .header div nav ul li img {
-    width: 100px;
+  .header div nav ul li img { /*icono de carrito de compras*/
+    width: 80px;
   }
 
   .logo img { 
     width: 300px;
-    
+    padding-left: 100px;
+
   }
+
   .carrousel {
     background-color: aquamarine;
   }
+
   .resenas {
     background-color: blue;
   }
+
   .footer {
-    background-color: blueviolet;
+    color: rgb(201, 175, 142);
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-content: space-between;
+    gap: 3em;
   }
+  .social_footer ul{
+    display: flex;
+    gap: 40px;
+  }
+  .social_footer img {
+    width: 50px;
+  }
+
+  .contacto_footer img {
+    width: 22px;
+  }
+  .pagos_footer img{
+    width: 25px;
+  }
+footer ul li {
+  display: flex; /* Aplica Flexbox para alinear el icono y el texto en línea */
+  align-items: center;
+  gap: 10px;
+  padding: 7px;
+}
+footer ul li a{
+  color: aliceblue;
+}
+.social_footer ,.contacto_footer , .pagos_footer, .info_footer {
+  display: flex; /* Aplica Flexbox para alinear el icono y el texto en línea */
+  flex-direction: column;
+  align-items: center;
+}
+small{
+  margin-top: auto
+}
