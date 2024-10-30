@@ -6,11 +6,12 @@
 }
 
 body {
-  padding: 50px;
+  padding: 20px ,40px,20px,40px;
     font-family: "Raleway", sans-serif;
     background-color: rgb(27, 18, 9);
   }
   
+  /*********************ESTILOS HEADER***************/
   .header {
     display: inline-flex;
     flex-direction: row;
@@ -20,7 +21,7 @@ body {
     align-items: center; 
     display: flex;
     gap: 80px;
-    padding-top: 80px;
+    padding-top: 70px;
     padding-left: 80px;
     flex-wrap: wrap;
   }
@@ -40,8 +41,12 @@ body {
 
   }
 
-  .header div nav ul li img { /*icono de carrito de compras*/
-    width: 80px;
+  .carrito-img img { /*icono de carrito de compras*/
+    width: 75px;
+  }
+
+  .user-img img{
+    width: 50px;
   }
 
   .logo img { 
@@ -51,13 +56,46 @@ body {
   }
 
   .carrousel {
-    background-color: aquamarine;
-  }
+    display: flex;
+    justify-content:center;
+    align-items: center;
 
+  }
+  
+  /*********CARRUSEL DE IMAGENES PRINCIPAL*************/
+  .carrousel img {
+    width: 536px; /* Para controlar el ancho de la imagen estática */
+  }
+  
+  .carruselExpress { /* carrusel de imagenes de alfajores*/
+    display: flex;
+    width: 1000px;
+    height: 670px;
+  }
+  
+  .carruselExpress img{
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .5;
+  transition: 0.8s ease;
+  }
+  .carruselExpress img:hover{ /*cuando se apoya con el curso encima*/
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(110%);
+    }
+
+
+    /*******ESTILOS DE SECCION RESEÑAS************/
   .resenas {
     background-color: blue;
   }
 
+
+
+  /*******ESTILOS DEL FOOTER************/
   .footer {
     color: rgb(201, 175, 142);
     display: flex;
@@ -96,3 +134,4 @@ footer ul li a{
 small{
   margin-top: auto
 }
+
