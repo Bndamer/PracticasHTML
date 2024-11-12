@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="icon" type="image/x-icon" href="/img/apapachoIcon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <title>Contacto Apapacho</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="#"><img src="./img/apapacho.svg" alt="" /> </a>
+      <div class="menu_container">
+        <nav class="navbar">
+          <ul class="menu_navbar">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./Productos.html">Productos</a></li>
+            <li><a href="./ComoComprar.html">Cómo comprar</a></li>
+            <li><a href="./Envios.html">Envios</a></li>
+            <li><a href="./Contacto.html">Contacto</a></li>
+            <li>
+              <a class="carrito-img" href="./Carrito.html"
+                ><img
+                  src="./img/carrito-de-compras-de-diseno-a-cuadros.png"
+                  alt="Carrito de Compras"
+              /></a>
+            </li>
+            <li>
+              <a class="user-img" href="./Carrito.html"
+                ><img src="./img/usuario.png" alt="Inicie Sesion o Registrese"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="contact-section">
+      <div class="form-contact">
+        <form action="https://formspree.io/f/mwpkbnbn" method="post">
+          <h2 class="titleForm">Consultas al equipo de Apapacho</h2>
+          <label for="name">Nombre completo</label>
+          <input type="text" id="username" name="username"  required placeholder="Ingrese su nombre"/>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" required placeholder="Ingresa tu mail"
+          />
+          <label for="messaje"> Contanos en qué podemos ayudarte</label>
+          <textarea name="consulta" id="consulta" cols="40" required>Escribe tu consulta</textarea>
+          <button type="submit">Enviar Consulta</button>
+        </form>
+      </div>
+    </section>
+
+    <hr />
+
+    <footer class="footer">
+      <div class="social_footer">
+        <h3>Nuestras redes sociales</h3>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="img/footer/facebook.png" alt="Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="img/footer/social.png" alt="Instagram"
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="info_footer">
+        <h3>Sobre Apapacho</h3>
+        <ul>
+          <li>
+            <span class="material-symbols-outlined"> location_on </span
+            ><a href="#">Avellaneda, Buenos Aires</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined"> library_books </span
+            ><a href="#">Catalogo Completo</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined"> group </span
+            ><a href="#">Sobre Nosotros</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined"> contact_support </span
+            ><a href="#">Preguntas Frecuentes</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pagos_footer">
+        <h3>Medios de Pago</h3>
+        <ul>
+          <li>
+            <span class="material-symbols-outlined"> payments </span
+            ><a href="#">Efectivo</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined"> account_balance </span
+            ><a href="#">Transferencia Bancaria</a>
+          </li>
+          <li>
+            <img src="./img/footer/MP.webp" alt="" /><a href="#">Mercadopago</a>
+          </li>
+        </ul>
+      </div>
+      <div class="contacto_footer">
+        <h3>Contacto</h3>
+        <ul>
+          <li>
+            <img src="./img/footer/whatsapp.png" alt="" /><a href="#"
+              >+54115869524</a
+            >
+          </li>
+          <li>
+            <span class="material-symbols-outlined"> mail </span
+            ><a href="#">apapacho.alfajores@gmail.com</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined"> description </span
+            ><a href="#">Consulta Web</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <small
+          >© 2024, Alfajores Apapacho. Todos los derechos reservados. Buenos
+          Aires, Argentina.</small
+        >
+      </div>
+    </footer>
+  </body>
+</html>
