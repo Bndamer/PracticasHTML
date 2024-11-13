@@ -1,141 +1,256 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
-*{
+* {
   text-decoration: none; /*elimina el subrayado en los elementos de las listas*/
   list-style-type: none; /*elimina los puntitos de la lista*/
 }
 
 body {
-  padding: 20px ,40px,20px,40px;
-    font-family: "Raleway", sans-serif;
-    background-color: rgb(27, 18, 9);
-  }
-  
-  /*********************ESTILOS HEADER***************/
-  .header {
-    display: inline-flex;
-    flex-direction: row;
-  }
-  .header div nav ul {
-    justify-content:center; /* Espacio igual entre los elementos del header */
-    align-items: center; 
-    display: flex;
-    gap: 70px;
-    padding-top: 70px;
-    padding-left: 80px;
-    flex-wrap: wrap;
-  }
+  padding: 20px, 40px, 20px, 40px;
+  font-family: "Raleway", sans-serif;
+  background-color: rgb(36, 25, 33);
+}
 
-  .header div nav ul li{
-    list-style-type: none; /*elimina los puntitos de la lista*/
-  }
-  .header div nav ul li  a{
-    color: black;
-    font-size: 25px;
-    text-decoration: none; /* Elimina el subrayado */
-    text-shadow: 
-    1px 1px 0 white,   /* 2px a la derecha, 2px hacia abajo, sin difuminado, color blanco */
-    -1px -1px 0 white, /* 2px a la izquierda, 2px hacia arriba, sin difuminado, color blanco */
-    1px -1px 0 white,  /* 2px a la derecha, 2px hacia arriba, sin difuminado, color blanco */
-    -1px 1px 0 white;  /* 2px a la izquierda, 2px hacia abajo, sin difuminado, color blanco */
+/**********************************************/
+/*********************ESTILOS HEADER***************/
+.header {
+  display: inline-flex;
+  flex-direction: row;
+}
+.header div nav ul {
+  justify-content: center; /* Espacio igual entre los elementos del header */
+  align-items: center;
+  display: flex;
+  gap: 70px;
+  padding-top: 70px;
+  padding-left: 80px;
+  flex-wrap: wrap;
+}
 
-  }
+.header div nav ul li {
+  list-style-type: none; /*elimina los puntitos de la lista*/
+}
+.header div nav ul li a {
+  color: black;
+  font-size: 25px;
+  text-decoration: none; /* Elimina el subrayado */
+  text-shadow: 1px 1px 0 white,
+    /* 2px a la derecha, 2px hacia abajo, sin difuminado, color blanco */ -1px -1px
+      0 white,
+    /* 2px a la izquierda, 2px hacia arriba, sin difuminado, color blanco */ 1px -1px
+      0 white,
+    /* 2px a la derecha, 2px hacia arriba, sin difuminado, color blanco */ -1px 1px
+      0 white; /* 2px a la izquierda, 2px hacia abajo, sin difuminado, color blanco */
+}
 
-  .carrito-img img { /*icono de carrito de compras*/
-    width: 75px;
-  }
+.carrito-img img {
+  /*icono de carrito de compras*/
+  width: 75px;
+}
 
-  .user-img img{
-    width: 50px;
-  }
+.user-img img {
+  width: 50px;
+}
 
-  .logo img { 
-    width: 300px;
-    padding-left: 100px;
+.logo img {
+  width: 300px;
+  padding-left: 100px;
+}
 
-  }
+.carrousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .carrousel {
-    display: flex;
-    justify-content:center;
-    align-items: center;
+/**********************************************/
+/*********CARRUSEL DE IMAGENES PRINCIPAL*************/
+.static-img {
+  width: 536px; /* Para controlar el ancho de la imagen*/
+  border-radius: 30px 0px 0px 30px;
+}
 
-  }
-  
-  /*********CARRUSEL DE IMAGENES PRINCIPAL*************/
-  .carrousel img {
-    width: 536px; /* Para controlar el ancho de la imagen estática */
-  }
-  
-  .carruselExpress { /* carrusel de imagenes de alfajores*/
-    display: flex;
-    width: 1000px;
-    height: 670px;
-  }
-  
-  .carruselExpress img{
+.carruselExpress {
+  /* carrusel de imagenes de alfajores*/
+  display: flex;
+  width: 1000px;
+  height: 670px;
+}
+
+.carruselExpress img {
   width: 0;
   flex-grow: 1;
   object-fit: cover;
-  opacity: .5;
+  opacity: 0.5;
   transition: 0.8s ease;
-  }
-  .carruselExpress img:hover{ /*cuando se apoya con el curso encima*/
-    cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(110%);
-    }
+}
+.img-final{
+  border-radius: 0px 30px 30px 0px;
+}
+.carruselExpress img:hover {
+  /*cuando se apoya con el curso encima*/
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(110%);
+}
+
+/**********************************************/
+/***********ESTILOS SECCION ALFAJORES***************/
+#sectionalfajores {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+}
+.alfa-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1800px;
+  gap: 40px;
+  justify-content: center; /* Centra las tarjetas */
+}
+.alfa-card {
+  background-color: rgba(255, 230, 241, 0.925);
+  border-radius: 20px;
+  width: 300px; /* Tamaño de las tarjetas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  padding: 25px;
+}
+.alfa-img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: auto; /* Mantiene la relación de aspecto original */
+  object-fit: cover; /* Asegura que la imagen se recorte si es necesario */
+  border-radius: 15px; /* Opcional: redondea las esquinas de la imagen */
+  max-height: 200px; /* Altura máxima de las imágenes */
+}
+
+.titulo-alfajores {
+  font-size: 1.8rem;
+  padding: 35px 0px 15px 0px;
+  color: #000000dc;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.322),
+    /* 2px a la derecha, 2px hacia abajo, sin difuminado, color blanco */ 1px -1px
+      0 white,
+    /* 2px a la izquierda, 2px hacia arriba, sin difuminado, color blanco */ 1px -1px
+      0 white,
+    /* 2px a la derecha, 2px hacia arriba, sin difuminado, color blanco */ -1px 1px
+      0 white; /* 2px a la izquierda, 2px hacia abajo, sin difuminado, color blanco */
+  text-align: center;
+}
+
+.alfa-description {
+  font-size: 1rem;
+  color: #646464;
+  margin: 10px 0;
+}
+
+.alfa-precio {
+  font-size: 1.2rem;
+  color: #47383d;
+  font-weight: bold;
+}
+
+/**********************************************/
+/*******ESTILOS DE SECCION RESEÑAS************/
 
 
+#resenas {
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
 
-    /***********ESTILOS SECCION ALFAJORES***************/
-    #sectionalfajores{
-      background-color: aquamarine;
-    }
+#resenas h2 {
+  font-size: 1.8rem;
+  color: #fdf0ff;
+  margin-bottom: 20px;
+}
 
-    /*******ESTILOS DE SECCION RESEÑAS************/
-  .resenas {
-    background-color: blue;
-  }
+/* Grid para las tarjetas de reseñas */
+.resenas-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 25px;
+  justify-content: center;
+}
 
-  /*******ESTILOS DEL FOOTER************/
-  .footer {
-    color: rgb(201, 175, 142);
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-content: space-between;
-    gap: 3em;
-  }
-  .social_footer ul{
-    display: flex;
-    gap: 40px;
-  }
-  .social_footer img {
-    width: 50px;
-  }
+/* Estilos para cada tarjeta de reseña */
+.resenas-card {
+  background-color: #e9d3c1e0;
+  border-radius: 15px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
 
-  .contacto_footer img {
-    width: 22px;
-  }
-  .pagos_footer img{
-    width: 25px;
-  }
+.resenas-card:hover {
+  transform: scale(1.05);
+}
+
+.resenas-card h3 {
+  color: #3d2841;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.resenas-card p {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+/* Estilos para la calificación en estrellas */
+.rating {
+  font-size: 1.2rem;
+  color: gold;
+}
+
+
+/***********************************************/
+/**************ESTILOS DEL FOOTER**************/
+.footer {
+  color: rgb(201, 175, 142);
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-content: space-between;
+  gap: 3em;
+}
+.social_footer ul {
+  display: flex;
+  gap: 40px;
+}
+.social_footer img {
+  width: 50px;
+}
+
+.contacto_footer img {
+  width: 22px;
+}
+.pagos_footer img {
+  width: 25px;
+}
 footer ul li {
   display: flex; /* Aplica Flexbox para alinear el icono y el texto en línea */
   align-items: center;
   gap: 10px;
   padding: 7px;
 }
-footer ul li a{
+footer ul li a {
   color: aliceblue;
 }
-.social_footer ,.contacto_footer , .pagos_footer, .info_footer {
+.social_footer,
+.contacto_footer,
+.pagos_footer,
+.info_footer {
   display: flex; /* Aplica Flexbox para alinear el icono y el texto en línea */
   flex-direction: column;
   align-items: center;
 }
-small{
-  margin-top: auto
+small {
+  margin-top: auto;
 }
-
