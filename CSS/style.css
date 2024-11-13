@@ -88,6 +88,12 @@ body {
     }
 
 
+
+    /***********ESTILOS SECCION ALFAJORES***************/
+    #sectionalfajores{
+      background-color: aquamarine;
+    }
+
     /*******ESTILOS DE SECCION RESEÑAS************/
   .resenas {
     background-color: blue;
