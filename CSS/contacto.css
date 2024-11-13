@@ -1,0 +1,78 @@
+/**********ESTILOS FORMULARIO CONTACT *******/
+
+#contact-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .form-contact {
+    background-color: rgb(255, 243, 235);
+    width: 350px;
+    height: 500px;
+    border-radius: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 35px;
+    align-items: center; /* Centra los elementos dentro del formulario */
+    gap: 11px;
+  }
+  
+  form input,
+  textarea {
+    width: 80%; /* Ajusta el ancho para centrar mejor */
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+    margin-bottom: 10px; /* Espacio entre cada elemento */
+  }
+  
+  .titleForm {
+    font-style: italic;
+    color: coral;
+    margin-bottom: 15px;
+  }
+  
+  .boton-form {
+    background-color: rgb(236, 179, 139);
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 40%; /* Ajusta el ancho para centrar el botón */
+    font-size: 1rem;
+    padding: 10px;
+  }
+  
+  .boton-form:hover {
+    background-color: rgb(228, 181, 172);
+  }
+
+
+  /*******ESTLOS DE MAPA************/
+  .mapa {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 243, 235);
+    border-radius: 30px;
+    width: 900px;
+    height: 500px;
+    align-items: center;
+    justify-content: center; /* Centra los elementos verticalmente */
+  }
+  .text-mapa{
+    text-align: center;
+  }
+  .sucursales {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sucursales p {
+    font-size: 15px;
+    font-style: italic;
+    margin: 0; /* Elimina márgenes adicionales en los elementos li */
+  }
+  

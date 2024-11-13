@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/contacto.css" />
     <link rel="icon" type="image/x-icon" href="/img/apapachoIcon.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
@@ -43,17 +44,36 @@
         <form action="https://formspree.io/f/mwpkbnbn" method="post">
           <h2 class="titleForm">Consultas al equipo de Apapacho</h2>
           <label for="name">Nombre completo</label>
-          <input type="text" id="username" name="username"  required placeholder="Ingrese su nombre"/>
+          <input type="text" id="username" name="username" required placeholder="Ingrese su nombre" />
           <label for="email">Correo electrónico:</label>
-          <input type="email" id="correo" name="correo" required placeholder="Ingresa tu mail"
-          />
-          <label for="messaje"> Contanos en qué podemos ayudarte</label>
+          <input type="email" id="correo" name="correo" required placeholder="Ingresa tu mail" />
+          <label for="messaje">Contanos en qué podemos ayudarte</label>
           <textarea name="consulta" id="consulta" cols="40" required>Escribe tu consulta</textarea>
-          <button type="submit">Enviar Consulta</button>
+          <button class="boton-form" type="submit">Enviar Consulta</button>
         </form>
+      </div>
+      <div class="mapa">
+        <div class="sucursales">
+        <ul >
+          <li><h2 class="text-mapa">¡Encontranos en nuestras sucursales!</h2></li>
+          <li><h4>SUCURSAL CENTRO</h4>
+            <p>Direccion : Adolfo Alsina 445</p>
+            <p>Telefono : 4356-9897</p></li>
+            <li><h4>SUCURSAL CORDOBA</h4>
+              <p>Direccion : Cordoba 2100</p>
+              <p>Telefono : 4356-9587</p></li>
+              <li><h4>SUCURSAL BARRACAS</h4>
+                <p>Direccion : California 1335</p>
+                <p>Telefono : 4356-8746</p></li>
+        </ul>
+      </div>
+        
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ZqnT44qwpR2b7hC1NahS4areJ8SnH_I&ehbc=2E312F&noprof=1" width="550" height="400"></iframe>
       </div>
     </section>
 
+    <section id="mapa">
+      
     <hr />
 
     <footer class="footer">
