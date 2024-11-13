@@ -81,7 +81,7 @@ body {
   width: 0;
   flex-grow: 1;
   object-fit: cover;
-  opacity: 0.5;
+  opacity: 0.7;
   transition: 0.8s ease;
 }
 .img-final{
@@ -111,7 +111,7 @@ body {
   justify-content: center; /* Centra las tarjetas */
 }
 .alfa-card {
-  background-color: rgba(255, 230, 241, 0.925);
+  background-color: rgb(211, 178, 159);
   border-radius: 20px;
   width: 300px; /* Tamaño de las tarjetas */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -143,7 +143,7 @@ body {
 
 .alfa-description {
   font-size: 1rem;
-  color: #646464;
+  color: #3b1818;
   margin: 10px 0;
 }
 
@@ -253,4 +253,50 @@ footer ul li a {
 }
 small {
   margin-top: auto;
+}
+
+/**************AREA RESPONSIVE*****************/
+/***********MEDIA QUERIES*********************/
+
+/* Media query para tablets (pantallas medianas) */
+@media (max-width: 1024px) {
+  .alfa-container {
+    width: 100%; /* Se adapta al ancho de pantalla */
+    gap: 20px;
+  }
+  
+  .alfa-card {
+    width: 45%; /* Ajusta el tamaño de las tarjetas para que ocupen la mitad del ancho */
+  }
+
+  .resenas-grid {
+    grid-template-columns: auto auto; /* Cambia de 4 a 2 columnas */
+  }
+}
+
+/* Media query para teléfonos o tablets (pantallas pequeñas) */
+@media (max-width: 768px) {
+  .header div nav ul {
+    flex-direction: column; /* Cambia el menú de horizontal a vertical */
+    gap: 20px;
+  }
+
+  .alfa-container {
+    flex-direction: column;
+    width: 100%; /* Se adapta al ancho de pantalla */
+  }
+  
+  .alfa-card {
+    width: 90%; /* Cada tarjeta ocupa casi el ancho completo */
+  }
+
+  .resenas-grid {
+    grid-template-columns: auto; /* Cambia de 2 columnas a 1 */
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center; /* Centra los elementos en dispositivos móviles */
+    gap: 1.5em;
+  }
 }

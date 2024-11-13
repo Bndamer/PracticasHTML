@@ -76,3 +76,52 @@
     margin: 0; /* Elimina márgenes adicionales en los elementos li */
   }
   
+  /**********RESPONSIVE DE CONTACTO Y MAPA*********/
+  /* Media query para tablets (pantallas medianas) */
+@media (max-width: 1024px) {
+  #contact-section {
+    width: 100%; /* Se adapta al ancho de pantalla */
+    gap: 15px;
+  }
+  .form-contact{
+    width: 30%;
+  }
+  .mapa {
+    width: 50%;
+  }
+  .mapa h2,h4,p{
+    font-size: 75%;
+  }
+  iframe {
+    width: 50%;
+  }
+}
+
+/* Media query para teléfonos o tablets (pantallas pequeñas) */
+@media (max-width: 768px) {
+  #contact-section {
+    width: 100%; /* Ocupar todo el ancho */
+    flex-direction: column; /* Cambia a disposición en columna */
+    gap: 10px;
+    align-items: center; /* Centra los elementos si es necesario */
+  }
+
+  .form-contact {
+    width: 90%; /* La forma ocupa casi todo el ancho de la pantalla */
+    padding: 15px; /* Opcional: agrega un pequeño padding */
+  }
+
+  .mapa {
+    width: 90%; /* El mapa también ocupa casi todo el ancho */
+    text-align: center; /* Centra el texto dentro del contenedor */
+  }
+
+  .mapa h2, .mapa h4, .mapa p {
+    font-size: 80%; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+  }
+
+  iframe {
+    width: 100%; /* Asegura que el mapa ocupe el ancho del contenedor */
+    height: auto; /* Ajusta la altura para mantener la proporción */
+  }
+}
