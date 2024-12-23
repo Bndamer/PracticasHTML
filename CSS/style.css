@@ -255,6 +255,10 @@ small {
   margin-top: auto;
 }
 
+#carrito-section{
+  background-color: rgb(255, 255, 255);
+}
+
 /**************AREA RESPONSIVE*****************/
 /***********MEDIA QUERIES*********************/
 
@@ -287,7 +291,7 @@ small {
   }
   
   .alfa-card {
-    width: 90%; /* Cada tarjeta ocupa casi el ancho completo */
+    width: 80%; /* Cada tarjeta ocupa casi el ancho completo */
   }
 
   .resenas-grid {
