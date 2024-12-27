@@ -126,6 +126,19 @@ body {
   border-radius: 15px; /* Opcional: redondea las esquinas de la imagen */
   max-height: 200px; /* Altura máxima de las imágenes */
 }
+.alfa-card button{
+  background-color: #fad4bb; /* Color de fondo */
+  color: rgb(43, 43, 43); /* Color del texto */
+  font-size: 14px; /* Tamaño del texto */
+  padding: 10px 10px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 20px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Suaviza el cambio de color */
+}
+.alfa-card button:hover {
+  background-color: #eea676; /* Color al pasar el mouse */
+}
 
 .titulo-alfajores {
   font-size: 1.8rem;
@@ -255,8 +268,56 @@ small {
   margin-top: auto;
 }
 
-#carrito-section{
-  background-color: rgb(255, 255, 255);
+#carrito-section {
+  background-color: rgba(255, 255, 255, 0.185);
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #fabbce;
+  text-align: center; /* Centra el texto dentro del contenedor */
+  padding: 10px; /* Agrega espacio alrededor del contenido */
+  margin: 0 auto; /* Centra horizontalmente si se usa con un ancho definido */
+  width: 60%; /* Ajusta el ancho del contenedor */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra al contenedor */
+}
+
+#carrito {
+  margin: 20px auto; /* Centra el div del carrito */
+  padding: 10px;
+  border: 2px solid #fabbce; /* Agrega un borde al contenedor del carrito */
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
+  display: inline-block; /* Ajusta el ancho al contenido */
+}
+
+#lista-carrito {
+  padding: 15px;
+  margin: 0;
+}
+#lista-carrito li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Espacio entre los elementos */
+  padding: 15px; /* Espaciado interno */
+  border: 1px solid #fabbce; /* Borde alrededor de cada elemento */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo más claro */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+#carrito button {
+  background-color: #fabbce; /* Color de fondo */
+  color: white; /* Color del texto */
+  font-size: 14px; /* Tamaño del texto */
+  padding: 10px 10px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+#carrito button:hover {
+  background-color: #fa9ab6; /* Color al pasar el mouse */
 }
 
 /**************AREA RESPONSIVE*****************/
