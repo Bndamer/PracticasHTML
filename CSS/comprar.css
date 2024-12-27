@@ -1,0 +1,36 @@
+#section-comprar{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+    
+}
+#section-comprar h1{
+    font-size: 1.8rem;
+    color: #fdf0ff;
+}
+
+#section-comprar p{
+    font-size: 1rem;
+    color: hsl(292, 100%, 97%);
+}
+
+#section-comprar ol{
+    display:block;
+  align-items: center;
+  margin-bottom: 10px; /* Espacio entre los elementos */
+  padding: 20px 30px 20px 30px; /* Espaciado interno */
+  border: 1px solid #fabbce; /* Borde alrededor de cada elemento */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: rgba(116, 55, 55, 0.315); /* Fondo más claro */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  width: 60%;
+}
+
+#section-comprar ol li{
+    color: hsl(1, 56%, 85%);
+    padding: 2px;
+    font-size: 0.9rem;
+    list-style-type: disc;
+    
+}

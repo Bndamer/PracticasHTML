@@ -47,7 +47,6 @@ body {
   /*icono de carrito de compras*/
   width: 75px;
 }
-
 .user-img img {
   width: 50px;
 }
@@ -136,6 +135,7 @@ body {
   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
   transition: background-color 0.3s ease; /* Suaviza el cambio de color */
 }
+
 .alfa-card button:hover {
   background-color: #eea676; /* Color al pasar el mouse */
 }

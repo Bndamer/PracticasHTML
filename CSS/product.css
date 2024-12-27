@@ -1,0 +1,45 @@
+#proceso-elaboracion {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+
+  }
+  .productos-header h1{
+    color: blanchedalmond;
+    font-style: italic;
+    padding-left: 100px;
+  }
+  #proceso-elaboracion h1,h2,p{
+    color: blanchedalmond;
+    font-style: italic;
+    padding-left: 80px;
+
+  }
+
+  .proceso-galeria {
+    display: grid;
+  grid-template-columns: auto auto;
+  gap: 25px;
+  justify-content: center;
+    justify-content: center; /* Centra las tarjetas */        
+      }
+
+      .proceso-item{
+        background-color: rgb(211, 178, 159);
+        border-radius: 20px;
+        width: 500px; /* Tamaño de las tarjetas */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        text-align: center;
+        padding: 25px;
+
+      }
+
+  .proceso-galeria img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto original */
+    object-fit: cover; /* Asegura que la imagen se recorte si es necesario */
+    border-radius: 15px; /* Opcional: redondea las esquinas de la imagen */
+    max-height: 200px; /* Altura máxima de las imágenes */
+  }
