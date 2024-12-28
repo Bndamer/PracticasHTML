@@ -5,12 +5,13 @@
     justify-content: center; /* Centra horizontalmente */
 
   }
-  .productos-header h1{
+  .productos-header{
     color: blanchedalmond;
     font-style: italic;
     padding-left: 100px;
   }
-  #proceso-elaboracion h1,h2,p{
+  .proceso-elaboracion {
+    justify-items: center;
     color: blanchedalmond;
     font-style: italic;
     padding-left: 80px;
@@ -33,7 +34,6 @@
         overflow: hidden;
         text-align: center;
         padding: 25px;
-
       }
 
   .proceso-galeria img {
@@ -42,4 +42,41 @@
     object-fit: cover; /* Asegura que la imagen se recorte si es necesario */
     border-radius: 15px; /* Opcional: redondea las esquinas de la imagen */
     max-height: 200px; /* Altura máxima de las imágenes */
+    transition: transform 0.3s ease;
   }
+  .proceso-galeria img:hover{
+    transform: scale(1.05);
+  }
+  .productos-destacados{
+    justify-items: center;
+    color: blanchedalmond;
+    font-style: italic;
+    padding-left: 80px;
+  }
+  .lista-productos2 ul li {
+    padding-top: 25px;
+  }
+
+  .lista-productos2{
+    display: flex;
+    color: rgb(255, 215, 205);
+    font-style: italic;
+    padding-left: 150px;
+    background-color: rgb(151, 101, 72);
+    border-radius: 10px;
+    width: 500px; /* Tamaño de las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 15px;
+    
+  }
+  
+  .lista-productos2 img{
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    
+  }
+
+
