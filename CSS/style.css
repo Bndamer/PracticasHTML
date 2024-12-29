@@ -268,6 +268,10 @@ small {
   margin-top: auto;
 }
 
+
+/******************************************************/
+/**************ESTILOS DEL CARRITO*****************/
+
 #carrito-section {
   background-color: rgba(255, 255, 255, 0.185);
   font-size: 20px;
@@ -319,6 +323,7 @@ small {
 #carrito button:hover {
   background-color: #fa9ab6; /* Color al pasar el mouse */
 }
+
 
 /**************AREA RESPONSIVE*****************/
 /***********MEDIA QUERIES*********************/

@@ -1,0 +1,30 @@
+#envios-section{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+} 
+#envios-div{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background-image:url('../img/alfajores/sable.jpg');
+  padding: 20px;
+  width: 1000px;
+  border-radius: 15px;
+  color: rgb(253, 243, 214);
+}
+#envios-div span{
+    vertical-align: bottom;
+    margin-right: 8px;
+}
+
+#preguntas-section{
+    padding: 50px 0px 40px 100px;
+    color: rgb(253, 243, 214);
+}
+#preguntas-section h3{
+    font-style: italic;
+}
+#preguntas-section p{
+    padding-bottom: 20px;
+}
