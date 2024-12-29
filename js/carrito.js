@@ -5,24 +5,27 @@ const vaciarCarritoBtn = document.querySelector("#vaciar-carrito");
 // Array para almacenar productos del carrito
 let productosCarrito = [];
 
-// Cargar eventos
+// Cargar eventos //
 document.addEventListener("DOMContentLoaded", () => {
   // Cargar carrito desde el localStorage
   productosCarrito = JSON.parse(localStorage.getItem("carrito")) || [];
   mostrarCarrito();
+  actualizarContadorCarrito();
 });
 
-vaciarCarritoBtn.addEventListener("click", () => {
+vaciarCarritoBtn.addEventListener("click", () => { // Función para vaciar el carrito///
   productosCarrito = []; // Vaciar el array
   sincronizarLocalStorage();
   mostrarCarrito();
+  actualizarContadorCarrito();
 });
 
-// Función para agregar producto al carrito
+// Función para agregar producto al carrito///
 function agregarProducto(producto) {
   productosCarrito.push(producto);
   sincronizarLocalStorage();
   mostrarCarrito();
+  actualizarContadorCarrito();
 }
 
 // Mostrar los productos del carrito en el HTML
@@ -57,11 +60,13 @@ function eliminarProducto(index) {
   productosCarrito.splice(index, 1);
   sincronizarLocalStorage();
   mostrarCarrito();
+  actualizarContadorCarrito();
 }
 
 // Guardar carrito con localStorage
 function sincronizarLocalStorage() {
   localStorage.setItem("carrito", JSON.stringify(productosCarrito));
+  actualizarContadorCarrito();
 }
 
 function actualizarContadorCarrito() {
