@@ -1,0 +1,87 @@
+[
+    {
+      "id": 1,
+      "nombre": "Alfajor de Chocolate",
+      "descripcion": "Deliciosos alfajores rellenos de dulce de leche, bañados en chocolate semiamargo.",
+      "precio": 1600,
+      "imagen": "img/alfajores/negro.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Alfajor de Chocolate Blanco",
+      "descripcion": "Dulzura cremosa en cada mordida, con una cobertura de chocolate blanco y un relleno de dulce de leche irresistible.",
+      "precio": 1600,
+      "imagen": "img/alfajores/chocoblanco.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Alfajor Baño Azucarado",
+      "descripcion": "Un clásico de siempre: suave y esponjoso, cubierto con una capa de azúcar que resalta su sabor tradicional.",
+      "precio": 1600,
+      "imagen": "img/alfajores/azucarado.webp"
+    },
+    {
+      "id": 4,
+      "nombre": "Alfajor Integral",
+      "descripcion": "La opción saludable sin sacrificar el sabor, elaborado con harina integral, avena y un relleno de dulce de leche.",
+      "precio": 1600,
+      "imagen": "img/alfajores/integral.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Alfajor de Nuez",
+      "descripcion": "Con trozos de nuez natural, este alfajor es una delicia crocante que combina a la perfección con el dulce de leche.",
+      "precio": 1600,
+      "imagen": "img/alfajores/nuez.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Alfajor de Maní",
+      "descripcion": "Elaborado con maní tostado, este alfajor ofrece una mezcla de texturas y un sabor único.",
+      "precio": 1600,
+      "imagen": "img/alfajores/mani.jpg"
+    },
+    {
+      "id": 7,
+      "nombre": "Alfajor de Membrillo",
+      "descripcion": "Un toque frutal en cada mordida, con un dulce de membrillo suave y una masa ligera y esponjosa.",
+      "precio": 1600,
+      "imagen": "img/alfajores/membrillo.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "Alfajor de Frutilla",
+      "descripcion": "Goloso y frutal, este alfajor combina una suave masa con un relleno de dulce de frutilla a la crema.",
+      "precio": 1600,
+      "imagen": "img/alfajores/frutilla.webp"
+    },
+    {
+      "id": 9,
+      "nombre": "Alfajor Corazón de Frambuesa",
+      "descripcion": "Ideal para compartir, relleno con dulce de frambuesa en el centro, cubierto de chocolate semiamargo.",
+      "precio": 1600,
+      "imagen": "img/alfajores/frambuesa.jpg"
+    },
+    {
+      "id": 10,
+      "nombre": "Alfajor Marplatense",
+      "descripcion": "Recubierto en chocolate y con el característico toque cítrico, este clásico marplatense es pura tradición y sabor.",
+      "precio": 1600,
+      "imagen": "img/alfajores/marplatense.webp"
+    },
+    {
+      "id": 11,
+      "nombre": "Alfajor Mousse de Chocolate Negro",
+      "descripcion": "Una delicia para los amantes del chocolate, con mousse de chocolate negro y una capa crujiente de chocolate semiamargo.",
+      "precio": 1600,
+      "imagen": "img/alfajores/moussechoco.webp"
+    },
+    {
+      "id": 12,
+      "nombre": "Alfajor Mousse de Chocolate Blanco",
+      "descripcion": "Textura cremosa de mousse de chocolate blanco, perfecta para quienes buscan un toque suave y dulce.",
+      "precio": 1600,
+      "imagen": "img/alfajores/moussechocoB.jpg"
+    }
+  ]
+  
