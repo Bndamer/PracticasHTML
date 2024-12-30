@@ -101,19 +101,23 @@
 @media (max-width: 768px) {
   #contact-section {
     width: 100%; /* Ocupar todo el ancho */
-    flex-direction: column; /* Cambia a disposición en columna */
-    gap: 10px;
+    display: grid;
+    grid-template-columns: auto ;
     align-items: center; /* Centra los elementos si es necesario */
+    text-align: center;
+    padding: 0 0 20px 0;
   }
 
   .form-contact {
-    width: 90%; /* La forma ocupa casi todo el ancho de la pantalla */
-    padding: 15px; /* Opcional: agrega un pequeño padding */
+    width: 60%; /*ancho de la pantalla */
+    margin: 0 auto;
+
   }
 
   .mapa {
     width: 90%; /* El mapa también ocupa casi todo el ancho */
     text-align: center; /* Centra el texto dentro del contenedor */
+    margin: 0 auto;
   }
 
   .mapa h2, .mapa h4, .mapa p {
@@ -121,7 +125,7 @@
   }
 
   iframe {
-    width: 100%; /* Asegura que el mapa ocupe el ancho del contenedor */
-    height: auto; /* Ajusta la altura para mantener la proporción */
+    width: 200px;
+    height: 400px; 
   }
 }

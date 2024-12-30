@@ -27,6 +27,7 @@
       }
 
       .proceso-item{
+
         background-color: rgb(211, 178, 159);
         border-radius: 20px;
         width: 500px; /* Tamaño de las tarjetas */
@@ -79,4 +80,52 @@
     
   }
 
+  /**************AREA RESPONSIVE*****************/
+/***********MEDIA QUERIES*********************/
 
+/* Media query para tablets (pantallas medianas) */
+@media (max-width: 1024px){
+  .productos-header{
+    width:80%;
+  }
+  .proceso-elaboracion{
+    width:60%;
+    margin: 0 auto;
+  }
+  .proceso-galeria{
+    justify-content: center;
+
+  }
+  .proceso-item {
+    width: 350px;
+   margin: 0 auto;
+  }
+}
+
+/* Media query para teléfonos o tablets (pantallas pequeñas) */
+@media (max-width: 768px){
+  .productos-header{
+    width:60%;
+  }
+  .proceso-elaboracion{
+    width:40%;
+    margin: 0 auto;
+  }
+  .proceso-galeria{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto;
+
+  }
+  .proceso-item {
+    width: 300px;
+   margin: 0 auto;
+  }
+
+  .productos-destacados{
+width: 80%;
+  }
+  .lista-productos2{
+    width: 85%;
+  }
+}

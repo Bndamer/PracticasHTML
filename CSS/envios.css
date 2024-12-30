@@ -28,3 +28,17 @@
 #preguntas-section p{
     padding-bottom: 20px;
 }
+
+  /**************AREA RESPONSIVE*****************/
+/***********MEDIA QUERIES*********************/
+
+/* Media query para tablets (pantallas medianas) */
+@media (max-width: 1024px){
+    
+
+}
+
+/* Media query para teléfonos o tablets (pantallas pequeñas) */
+@media (max-width: 768px){
+  
+}

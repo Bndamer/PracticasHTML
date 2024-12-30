@@ -19,7 +19,7 @@
     display: flex; /* Mostrar el modal */
     opacity: 1;
     visibility: visible;
-    transition: opacity 0.3s ease, visibility 0s 0s;
+    transition: right 0.3s ease, opacity 0.3s ease;
   }
 /* Contenido del modal */
 .modal-contenido {

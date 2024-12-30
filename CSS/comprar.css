@@ -34,3 +34,20 @@
     list-style-type: disc;
     
 }
+
+  /**************AREA RESPONSIVE*****************/
+/***********MEDIA QUERIES*********************/
+
+/* Media query para tablets (pantallas medianas) */
+@media (max-width: 1024px){
+
+}
+
+/* Media query para teléfonos o tablets (pantallas pequeñas) */
+@media (max-width: 768px){
+  h1{
+    width: 80%;
+    text-align: center;
+
+  }
+}

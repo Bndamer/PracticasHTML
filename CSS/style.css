@@ -83,7 +83,7 @@ body {
   opacity: 0.7;
   transition: 0.8s ease;
 }
-.img-final{
+.img-final {
   border-radius: 0px 30px 30px 0px;
 }
 .carruselExpress img:hover {
@@ -125,7 +125,7 @@ body {
   border-radius: 15px; /* Opcional: redondea las esquinas de la imagen */
   max-height: 200px; /* Altura máxima de las imágenes */
 }
-.alfa-card button{
+.alfa-card button {
   background-color: #fad4bb; /* Color de fondo */
   color: rgb(43, 43, 43); /* Color del texto */
   font-size: 14px; /* Tamaño del texto */
@@ -168,7 +168,6 @@ body {
 
 /**********************************************/
 /*******ESTILOS DE SECCION RESEÑAS************/
-
 
 #resenas {
   padding: 40px 20px;
@@ -223,7 +222,6 @@ body {
   color: gold;
 }
 
-
 /***********************************************/
 /**************ESTILOS DEL FOOTER**************/
 .footer {
@@ -268,14 +266,13 @@ small {
   margin-top: auto;
 }
 
-
 /******************************************************/
 /**************ESTILOS DEL CARRITO*****************/
 
 #carrito-section {
   background-color: rgba(255, 255, 255, 0.185);
   font-size: 20px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: #fabbce;
   text-align: center; /* Centra el texto dentro del contenedor */
   padding: 10px; /* Agrega espacio alrededor del contenido */
@@ -324,23 +321,41 @@ small {
   background-color: #fa9ab6; /* Color al pasar el mouse */
 }
 
+/* Estilos para el icono de menú hamburguesa */
+.abrir-menu,
+.cerrar-menu {
+  display: none; /* Inicialmente oculto */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  border: 0;
+}
 
 /**************AREA RESPONSIVE*****************/
 /***********MEDIA QUERIES*********************/
 
 /* Media query para tablets (pantallas medianas) */
 @media (max-width: 1024px) {
+  
+  
   .alfa-container {
     width: 100%; /* Se adapta al ancho de pantalla */
     gap: 20px;
   }
-  
+
   .alfa-card {
-    width: 45%; /* Ajusta el tamaño de las tarjetas para que ocupen la mitad del ancho */
+    width: 35%; /* Ajusta el tamaño de las tarjetas para que ocupen la mitad del ancho */
   }
 
   .resenas-grid {
     grid-template-columns: auto auto; /* Cambia de 4 a 2 columnas */
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
   }
 }
 
@@ -350,12 +365,14 @@ small {
     flex-direction: column; /* Cambia el menú de horizontal a vertical */
     gap: 20px;
   }
-
+.carruselExpress{
+  display: none;
+}
   .alfa-container {
     flex-direction: column;
     width: 100%; /* Se adapta al ancho de pantalla */
   }
-  
+
   .alfa-card {
     width: 80%; /* Cada tarjeta ocupa casi el ancho completo */
   }
@@ -365,8 +382,43 @@ small {
   }
 
   .footer {
+    display: grid;
+    grid-template-columns: auto ;
+  }
+
+  /* Mostrar el botón de menú hamburguesa */
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    color: #fad4bb;
+
+  }
+ 
+
+  /* Esconder el menú en dispositivos móviles */
+  .navbar {
+    display: flex;
     flex-direction: column;
-    align-items: center; /* Centra los elementos en dispositivos móviles */
-    gap: 1.5em;
+    gap: 20px;
+    width: 30%;
+    align-items: end;
+    justify-content: end;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    border-radius: 5px 0px 0px 5px;
+    cursor: pointer;
+    top:0;
+    right: 0;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    transition: right 0.3s ease, opacity 0.3s ease;
+  }
+
+  .navbar.visible {
+    opacity: 1;
+    visibility: visible;
   }
 }
