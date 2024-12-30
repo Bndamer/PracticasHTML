@@ -24,6 +24,6 @@
           }
         });
   
-  // Llamar a la función para cargar el modal al cargar la página
-  window.onload = cargarModal;
+  // // Llamar a la función para cargar el modal al cargar la página
+  // window.onload = cargarModal;
   

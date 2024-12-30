@@ -1,3 +1,6 @@
+// Importar la función desde contadorCarrito.js
+import { actualizarContadorCarrito } from "./contador.js";
+
 // Selección de elementos
 const carrito = document.querySelector("#lista-carrito");
 const vaciarCarritoBtn = document.querySelector("#vaciar-carrito");
@@ -20,13 +23,13 @@ vaciarCarritoBtn.addEventListener("click", () => { // Función para vaciar el ca
   actualizarContadorCarrito();
 });
 
-// Función para agregar producto al carrito///
-function agregarProducto(producto) {
-  productosCarrito.push(producto);
-  sincronizarLocalStorage();
-  mostrarCarrito();
-  actualizarContadorCarrito();
-}
+// // Función para agregar producto al carrito///
+// function agregarProducto(producto) {
+//   productosCarrito.push(producto);
+//   sincronizarLocalStorage();
+//   mostrarCarrito();
+//   actualizarContadorCarrito();
+// }
 
 // Mostrar los productos del carrito en el HTML
 function mostrarCarrito() {
@@ -68,16 +71,3 @@ function sincronizarLocalStorage() {
   localStorage.setItem("carrito", JSON.stringify(productosCarrito));
   actualizarContadorCarrito();
 }
-
-function actualizarContadorCarrito() {
-  // Actualiza el contador del carrito en el HEADER de mis paginas html
-  let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-  let contador = carrito.reduce(
-    (total, producto) => total + producto.cantidad,
-    0
-  );
-  document.getElementById("carrito-count").textContent = contador;
-}
-
-// Llama a esta función al cargar la página
-window.onload = actualizarContadorCarrito;

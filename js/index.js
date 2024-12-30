@@ -1,3 +1,6 @@
+// Importar la función desde contadorCarrito.js
+import { actualizarContadorCarrito } from "./contador.js";
+
 // Obtiene los botones "Agregar al Carrito"
 const botonesAgregarCarrito = document.querySelectorAll('.agregar-carrito');
   
@@ -38,6 +41,8 @@ botonesAgregarCarrito.forEach(boton => {
 
         // Guardamos el carrito actualizado en el localStorage
         localStorage.setItem('carrito', JSON.stringify(carrito));
+
+        actualizarContadorCarrito();
 
         // Puedes mostrar un mensaje de confirmación si lo deseas
         alert('Producto agregado al carrito');
