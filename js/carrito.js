@@ -1,20 +1,26 @@
 // Importar la función desde contadorCarrito.js
 import { actualizarContadorCarrito } from "./contador.js";
 
-// Selección de elementos
+
+// Cargar eventos //
+document.addEventListener("DOMContentLoaded", () => {
+  
 const carrito = document.querySelector("#lista-carrito");
 const vaciarCarritoBtn = document.querySelector("#vaciar-carrito");
 
 // Array para almacenar productos del carrito
 let productosCarrito = [];
-
-// Cargar eventos //
-document.addEventListener("DOMContentLoaded", () => {
   // Cargar carrito desde el localStorage
   productosCarrito = JSON.parse(localStorage.getItem("carrito")) || [];
   mostrarCarrito();
   actualizarContadorCarrito();
-});
+
+
+
+
+
+
+
 
 vaciarCarritoBtn.addEventListener("click", () => { // Función para vaciar el carrito///
   productosCarrito = []; // Vaciar el array
@@ -71,3 +77,4 @@ function sincronizarLocalStorage() {
   localStorage.setItem("carrito", JSON.stringify(productosCarrito));
   actualizarContadorCarrito();
 }
+});
