@@ -27,13 +27,13 @@ form.addEventListener('submit', function (e) {
     }
 
     // Validación de la consulta
-    if (messageInput.value.trim().length < 10) {
+    if (messageInput.value.trim().length < 10) { //se requiere un min de 4 caracteres para el nombre completo//
         errors.push('La consulta debe tener al menos 10 caracteres.');
     }
 
     // Mostrar errores o enviar el formulario
     if (errors.length > 0) {
-        alert(errors.join('\n'));
+        alert(errors.join('\n')); 
     } else {
         alert('Formulario enviado correctamente.');
         form.submit(); // Envía el formulario si no hay errores
