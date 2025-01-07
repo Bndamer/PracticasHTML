@@ -72,7 +72,7 @@ body {
 .carruselExpress {
   /* carrusel de imagenes de alfajores*/
   display: flex;
-  width: 1000px;
+  width: 50vw;
   height: 670px;
 }
 
@@ -101,19 +101,19 @@ body {
   flex-direction: column;
   align-items: center; /* Centra verticalmente */
   justify-content: center; /* Centra horizontalmente */
-  padding: 0 2em 0 2em;
+  /*padding: 0 2em 0 2em;*/
 }
 .alfa-container {
   display: flex;
   flex-wrap: wrap;
-  width: 1800px;
-  gap: 40px;
+  width: 90vw;
+  gap: 20px;
   justify-content: center; /* Centra las tarjetas */
 }
 .alfa-card {
   background-color: rgb(211, 178, 159);
   border-radius: 20px;
-  width: 300px; /* Tamaño de las tarjetas */
+  width: 280px; /* Tamaño de las tarjetas */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   text-align: center;
@@ -230,7 +230,7 @@ body {
   display: flex;
   justify-content: center; /* Centra horizontalmente */
   align-content: space-between;
-  gap: 2em;
+  gap: 0.5em;
   padding: 0 2em 0 2em;
 }
 .social_footer ul {
@@ -275,7 +275,7 @@ small {
   background-color: rgba(255, 255, 255, 0.185);
   font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: #fabbce;
+  color: #f4487c;
   text-align: center; /* Centra el texto dentro del contenedor */
   padding: 10px; /* Agrega espacio alrededor del contenido */
   margin: 0 auto; /* Centra horizontalmente si se usa con un ancho definido */
@@ -309,7 +309,7 @@ small {
 }
 
 #carrito button {
-  background-color: #fabbce; /* Color de fondo */
+  background-color: #ff99b8; /* Color de fondo */
   color: white; /* Color del texto */
   font-size: 14px; /* Tamaño del texto */
   padding: 10px 10px; /* Espaciado interno */
@@ -320,7 +320,7 @@ small {
 }
 
 #carrito button:hover {
-  background-color: #fa9ab6; /* Color al pasar el mouse */
+  background-color: #aa6377; /* Color al pasar el mouse */
 }
 
 /* Estilos para el icono de menú hamburguesa */
