@@ -21,7 +21,7 @@ body {
   justify-content: center; /* Espacio igual entre los elementos del header */
   align-items: center;
   display: flex;
-  gap: 70px;
+  gap: 50px;
   padding-top: 70px;
   padding-left: 80px;
   flex-wrap: wrap;
@@ -101,6 +101,7 @@ body {
   flex-direction: column;
   align-items: center; /* Centra verticalmente */
   justify-content: center; /* Centra horizontalmente */
+  padding: 0 2em 0 2em;
 }
 .alfa-container {
   display: flex;
@@ -229,7 +230,8 @@ body {
   display: flex;
   justify-content: center; /* Centra horizontalmente */
   align-content: space-between;
-  gap: 3em;
+  gap: 2em;
+  padding: 0 2em 0 2em;
 }
 .social_footer ul {
   display: flex;

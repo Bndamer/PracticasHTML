@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   mostrarCarrito();
   actualizarContadorCarrito();
 
-  // Vaciar carrito
+  ////// Vaciar carrito ///////
   vaciarCarritoBtn.addEventListener("click", () => {
     if (confirm("¿Estás seguro de que deseas vaciar el carrito?")) {
       productosCarrito = [];
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // ✅ Vincular los botones de agregar al carrito
+  //////// Vincular los botones de agregar al carrito /////
   function cargarEventosAgregarCarrito(productos) {
     const botonesAgregar = document.querySelectorAll(".agregar-carrito");
 
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ✅ Agregar producto al carrito
+  ////// Agregar producto al carrito///////
   function agregarProducto(producto) {
 // Verificar si el producto ya está en el carrito
 const existe = productosCarrito.find((item) => item.id === producto.id);
@@ -66,7 +66,7 @@ if (existe) {
     calcularTotalCarrito();
   }
 
-  // ✅ Mostrar los productos del carrito en el HTML
+  ////// Mostrar los productos del carrito en el HTML//////
   function mostrarCarrito() {
     carrito.innerHTML = "";
 
@@ -81,7 +81,7 @@ if (existe) {
       carrito.appendChild(li);
     });
 
-    // Agregar evento a cada botón de eliminar
+    ////// Agregar evento a cada botón de eliminar/////
     document.querySelectorAll(".btn-eliminar").forEach((btn) => {
       btn.addEventListener("click", (e) => {
         eliminarProducto(e.target.dataset.index);
@@ -90,7 +90,7 @@ if (existe) {
     calcularTotalCarrito();
   }
 
-  // ✅ Eliminar producto del carrito
+  ////// Eliminar producto del carrito//////
   function eliminarProducto(index) {
     productosCarrito.splice(index, 1);
     sincronizarLocalStorage();
@@ -99,12 +99,12 @@ if (existe) {
     calcularTotalCarrito();
   }
 
-  // ✅ Guardar carrito en localStorage
+  /////// Guardar carrito en localStorage //////
   function sincronizarLocalStorage() {
     localStorage.setItem("carrito", JSON.stringify(productosCarrito));
   }
 
-  // ✅ Formatear precios
+  /////// Formatear precios ////////
   function formatearPrecio(precio) {
     return new Intl.NumberFormat("es-AR", { style: "currency", currency: "ARS" }).format(precio);
   }
