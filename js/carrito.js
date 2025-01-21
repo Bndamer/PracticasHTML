@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
       sincronizarLocalStorage();
       mostrarCarrito();
       calcularTotalCarrito();
+      actualizarContadorCarrito();
     }
   });
 
